@@ -1,0 +1,101 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Helvetica";
+    background-color: #C4C4C4;   
+}
+
+.container {
+    background: rgb(196, 196, 196);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+}
+
+.gitLogo {
+    width: 300px;
+    height: auto;
+}
+
+.form-repo {
+    font-size: 18px;
+    margin: 15px 0;
+    padding: 8px;
+    width: 550px;
+    height: 40px;
+    border: 0;
+}
+
+.autocomplete-list {
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.autocomplete-list li {
+    width: 550px;
+    height: 40px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.repo-list {
+    width: 550px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+.repo-list-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    cursor: pointer;
+}
+
+.repo-list li {
+    padding: 8px 16px;
+    background-color: rgb(226, 123, 235);
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.repo-list li:hover {
+    border-color: white;
+}
+
+.autocomplete-list li:hover {
+    background-color: black;
+    color: white;
+    
+}
+
+.repo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.repo-list li .remove-btn {
+    background-color: rgb(226, 123, 235);
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    transform: scale(1.1);
+}
